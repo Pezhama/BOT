@@ -16,5 +16,5 @@ bot.onText(/\/bellsschedule/, (msg, match) => {
 })
 
 bot.on('message', msg => {
-  bot.sendMessage(msg.chat.id, `×óèòñ, ${msg.from.first_name}`)
+  bot.sendMessage(msg.chat.id, `chuits, ${msg.from.first_name}`)
 })
