@@ -5,7 +5,7 @@ const TOKEN = process.env.TLGTOKEN
 const bot = new TelegramBot(TOKEN, {polling: true})
 
 bot.onText(/\/bellsschedule/, (msg, match) => {
-	bot.sendMessage(msg.chat.id , `9:15-9:55
+	bot.sendMessage(`@retrochanel` , `9:15-9:55
 10:05-10:45
 11:00-11:40
 11:55-12:35
