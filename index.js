@@ -18,6 +18,7 @@ bot.onText(/\/bells/, (msg, match) => {
 bot.on('message', msg => {
   bot.sendMessage(msg.chat.id, `chuits, ${msg.from.first_name}`)
 })
+
 bot.onText(/\/resend/, (msg, match) => {
-	bot.sendMessage(`@retrochanel` , msg.text)
+	bot.sendMessage(`@retrochanel` , msg.text.match(/\/resend(.*)/)[1])
 })
