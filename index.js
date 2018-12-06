@@ -21,7 +21,11 @@ bot.on('message', msg => {
 
 bot.onText(/\/resend/, (msg, match) => {
 	bot.sendMessage(`@retrochanel` , msg.text.match(/\/resend(.*)/)[1]+`#memes`);
-bot.sendMessage(msg.chat.id,`thank you`, msg.text.match(/\/mark(.*)/)[1]);
-bot.sendMessage(`@retrochanel`,`Nastya got five!` , msg.text.match(/\/mark(.*)/)[1])
+
 })
 
+bot.onText(/\/mark/, (msg, match) => {
+	
+bot.sendMessage(msg.chat.id,`thank you`);
+bot.sendMessage(`@retrochanel`,`Nastya got `+ msg.text.match(/\/mark(.*)/)[1])
+})
