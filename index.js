@@ -19,8 +19,8 @@ bot.on('message', msg => {
   bot.sendMessage(msg.chat.id, `chuits, ${msg.from.first_name}`)
 })
 
-bot.onText(/\/resend/, (msg, match) => {
-	bot.sendMessage(`@retrochanel` , msg.text.match(/\/resend(.*)/)[1]+`#memes`);
+bot.onText(/[^а-я]плох/, (msg, match) => {
+	bot.sendMessage(msg.chat.id , `что случилось?`);
 
 })
 
