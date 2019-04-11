@@ -15,10 +15,6 @@ bot.onText(/\/bells/, (msg, match) => {
 15:20-16:00`)
 })
 
-bot.on('message', msg => {
-  bot.sendMessage(msg.chat.id, `chuits, ${msg.from.first_name}`)
-})
-
 bot.onText(/[^а-я]плох/, (msg, match) => {
 	bot.sendMessage(msg.chat.id , `что случилось?`);
 
