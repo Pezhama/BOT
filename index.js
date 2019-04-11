@@ -1,4 +1,4 @@
-const TelegramBot = require('node-telegram-bot-api')
+﻿const TelegramBot = require('node-telegram-bot-api')
 
 const TOKEN = process.env.TLGTOKEN
 
@@ -42,7 +42,7 @@ bot.onText(/по|рас[c+]ор[иа]/, (msg, match) => {
 	bot.sendMessage(msg.chat.id , `За любой ссорой следует примирение`);
 })
 
-bot.onText(/е|о(гэ)|(кр)/, (msg, match) => {
+bot.onText(/[^а-я](е|о)гэ|[^а-я](кр)[^а-я]/, (msg, match) => {
 	bot.sendMessage(msg.chat.id , `Любой экзамен — это всего лишь одна маленькая часть твоей жизни. Не стоит расстраиваться из-за такой ерунды`);
 })
 
